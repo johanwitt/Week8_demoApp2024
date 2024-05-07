@@ -40,6 +40,6 @@ e4.grid(row=3, column=1)
 # button group
 
 tk.Button(master, text='Show', command=backend.show_entries).grid(row=7, column =0)
-tk.Button(master, text='Submit', command=backend.add_entries).grid(row=7, column =1)
+tk.Button(master, text='Submit', command=backend.add_entries(ID, Fname, Lname, Email)).grid(row=7, column =1)
 
 tk.mainloop()
