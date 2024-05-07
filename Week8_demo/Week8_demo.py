@@ -27,10 +27,16 @@ e3=tk.Entry(master)
 e4=tk.Entry(master)
 
 # get textbox data
-ID = e1.get()
-Fname = e2.get()
-Lname = e3.get()
-Email = e4.get()
+
+# this is a go around because you cannot pass arguments into 'command' in Button
+def submit():
+    ID = e1.get()
+    Fname = e2.get()
+    Lname = e3.get()
+    Email = e4.get()
+
+    backend.add_entries(ID, Fname, Lname, Email)
+
 
 e1.grid(row=0, column=1)
 e2.grid(row=1, column=1)
@@ -40,6 +46,6 @@ e4.grid(row=3, column=1)
 # button group
 
 tk.Button(master, text='Show', command=backend.show_entries).grid(row=7, column =0)
-tk.Button(master, text='Submit', command=backend.add_entries(ID, Fname, Lname, Email)).grid(row=7, column =1)
+tk.Button(master, text='Submit', command=submit).grid(row=7, column =1)
 
 tk.mainloop()

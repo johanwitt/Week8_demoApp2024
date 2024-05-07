@@ -9,7 +9,7 @@ class backend:
         self.email = Email
         
     def show_entries():
-        conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:\Users\ongchangcoj\Downloads\Wk8_demoDB.accdb')
+        conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:\Users\ongchangcoj\Source\Repos\Week8_demoApp2024\Week8_demo\Week8DB.accdb')
 
         cursor = conn.cursor()
 
@@ -20,7 +20,7 @@ class backend:
         
     def add_entries(Id, fname, lname, email):
     
-        conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:\Users\ongchangcoj\Downloads\Wk8_demoDB.accdb')
+        conn = pyodbc.connect(r'Driver={Microsoft Access Driver (*.mdb, *.accdb)};DBQ=C:\Users\ongchangcoj\Source\Repos\Week8_demoApp2024\Week8_demo\Week8DB.accdb')
 
         cursor = conn.cursor()
 
