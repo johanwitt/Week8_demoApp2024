@@ -22,6 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Backend.py" />
     <Compile Include="Week8_demo.py" />
   </ItemGroup>
   <ItemGroup>
